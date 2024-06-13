@@ -1,12 +1,14 @@
 import React from "react";
 import { Container, Row, Col } from "react-bootstrap";
-import myImg from "../../Assets/avatar.svg";
+import myImg from "../../Assets/avatar.jpeg";
 import Tilt from "react-parallax-tilt";
 import {
   AiFillGithub,
   AiOutlineTwitter,
   AiFillInstagram,
 } from "react-icons/ai";
+
+import { SiCodewars } from "react-icons/si";
 import { FaLinkedinIn } from "react-icons/fa";
 
 function Home2() {
@@ -19,22 +21,19 @@ function Home2() {
               LET ME <span className="purple"> INTRODUCE </span> MYSELF
             </h1>
             <p className="home-about-body">
-              I fell in love with programming and I have at least learnt
-              something, I think… 🤷‍♂️
+            I discovered my passion for programming and have been steadily enhancing my expertise ever since.
               <br />
-              <br />I am fluent in classics like
+              <br />Proficient in 
               <i>
-                <b className="purple"> C++, Javascript and Go. </b>
+                <b className="purple"> Python and SQL, </b>
               </i>
+              I rely on these languages as my main tools.
               <br />
               <br />
-              My field of Interest's are building new &nbsp;
+              My primary interests lie in 
               <i>
-                <b className="purple">Web Technologies and Products </b> and
-                also in areas related to{" "}
-                <b className="purple">
-                  Blockchain.
-                </b>
+                <b className="purple"> data analysis, data ETL processes, and pipeline construction. </b> I am dedicated to crafting effective and scalable data solutions.{" "}
+                
               </i>
               <br />
               <br />
@@ -54,7 +53,7 @@ function Home2() {
           </Col>
           <Col md={4} className="myAvtar">
             <Tilt>
-              <img src={myImg} className="img-fluid" alt="avatar" />
+              <img src={myImg} className="img-fluid" alt="avatar" style={{ borderRadius: "50%" }}/>
             </Tilt>
           </Col>
         </Row>
@@ -65,47 +64,38 @@ function Home2() {
               Feel free to <span className="purple">connect </span>with me
             </p>
             <ul className="home-about-social-links">
-              <li className="social-icons">
-                <a
-                  href="https://github.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiFillGithub />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://twitter.com/Soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <AiOutlineTwitter />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.linkedin.com/in/soumyajit4419/"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour  home-social-icons"
-                >
-                  <FaLinkedinIn />
-                </a>
-              </li>
-              <li className="social-icons">
-                <a
-                  href="https://www.instagram.com/soumyajit4419"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="icon-colour home-social-icons"
-                >
-                  <AiFillInstagram />
-                </a>
-              </li>
-            </ul>
+            <li className="social-icons">
+              <a
+                href="https://github.com/Kimeur"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <AiFillGithub />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.linkedin.com/in/marouane-gazouzi-57840b72/"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <FaLinkedinIn />
+              </a>
+            </li>
+            <li className="social-icons">
+              <a
+                href="https://www.codewars.com/users/Kimeur"
+                style={{ color: "white" }}
+                target="_blank" 
+                rel="noopener noreferrer"
+              >
+                <SiCodewars />
+              </a>
+            </li>
+          </ul>
+            
           </Col>
         </Row>
       </Container>
