@@ -37,18 +37,11 @@ function Home2() {
               </i>
               <br />
               <br />
-              Whenever possible, I also apply my passion for developing products
-              with <b className="purple">Node.js</b> and
-              <i>
-                <b className="purple">
-                  {" "}
-                  Modern Javascript Library and Frameworks
-                </b>
-              </i>
-              &nbsp; like
-              <i>
-                <b className="purple"> React.js and Next.js</b>
-              </i>
+              Whenever possible, I channel my enthusiasm for data engineering into utilizing tools such as <b className="purple">Pandas</b>, <b className="purple">SQLAlchemy</b>, <b className="purple">PySpark</b>, and <b className="purple">Apache Airflow</b>. 
+              <br />
+              <br />
+              I also leverage cloud computing services on <b className="purple">Google Cloud Platform (GCP)</b> to boost scalability and performance. Additionally, I employ modern data visualization libraries like <b className="purple">Matplotlib</b>, as well as <b className="purple">Looker Studio</b> Looker, to bring insights to life.
+
             </p>
           </Col>
           <Col md={4} className="myAvtar">
