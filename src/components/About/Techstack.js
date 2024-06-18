@@ -1,6 +1,10 @@
 import React from "react";
 import { Col, Row } from "react-bootstrap";
-import { CgCPlusPlus } from "react-icons/cg";
+import { PiFileSqlLight } from "react-icons/pi";
+import { SiGooglecloud, SiApachespark, SiTeradata, SiInformatica, SiMysql, SiApachehive, SiApachekafka, SiRabbitmq, SiLinux } from "react-icons/si";
+import { GrOracle } from "react-icons/gr";
+
+
 import {
   DiJavascript1,
   DiReact,
@@ -8,7 +12,6 @@ import {
   DiMongodb,
   DiPython,
   DiGit,
-  DiJava,
 } from "react-icons/di";
 import {
   SiRedis,
@@ -18,51 +21,69 @@ import {
   SiPostgresql,
 } from "react-icons/si";
 import { TbBrandGolang } from "react-icons/tb";
+import { SiGooglebigquery } from "react-icons/si";
+
 
 function Techstack() {
   return (
     <Row style={{ justifyContent: "center", paddingBottom: "50px" }}>
       <Col xs={4} md={2} className="tech-icons">
-        <CgCPlusPlus />
+        <DiPython />
+        <span className="tooltip-text">Python</span>
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <PiFileSqlLight />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiJavascript1 />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <TbBrandGolang />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
         <DiNodejs />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiReact />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiSolidity />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <DiMongodb />
-      </Col>
-      <Col xs={4} md={2} className="tech-icons">
-        <SiNextdotjs />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <DiGit />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiFirebase />
+        <SiGooglebigquery />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <SiRedis />
+        <GrOracle />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiGooglecloud />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiMongodb />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachespark />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiTeradata />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiInformatica />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
         <SiPostgresql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiPython />
+        <SiMysql />
       </Col>
       <Col xs={4} md={2} className="tech-icons">
-        <DiJava />
+        <SiApachehive />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiApachekafka />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <DiReact />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiRabbitmq />
+      </Col>
+      <Col xs={4} md={2} className="tech-icons">
+        <SiLinux />
       </Col>
     </Row>
   );

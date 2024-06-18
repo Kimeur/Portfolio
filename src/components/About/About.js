@@ -25,6 +25,7 @@ function About() {
               Know Who <strong className="purple">I'M</strong>
             </h1>
             <Aboutcard />
+            
           </Col>
           <Col
             md={5}

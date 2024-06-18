@@ -580,6 +580,22 @@ button:focus {
   padding: 20px !important;
   line-height: 1.6 !important;
 }
+.tooltip-text {
+  visibility: hidden;
+  width: 60px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 5px;
+  padding: 5px;
+  position: absolute;
+  z-index: 1;
+  bottom: 125%; /* Position the tooltip above the icon */
+  left: 50%;
+  margin-left: -30px; /* Use half of the width (60px/2) to center the tooltip */
+  opacity: 0;
+  transition: opacity 0.3s;
+}
 
 .quote-card-view {
   border: none !important;
