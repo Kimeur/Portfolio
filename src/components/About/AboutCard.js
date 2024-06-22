@@ -16,13 +16,13 @@ function AboutCard() {
     <Card className="quote-card-view">
       <Card.Body>
         <blockquote className="blockquote mb-0">
-          <p style={{ textAlign: "justify" }}>
-            <p style={{ textAlign: "justify" }}>
+          <p style={{ textAlign: "left" }}>
+            <p style={{ textAlign: "left" }}>
               Hi Everyone, I am <span className="purple">Marouane</span> from{" "}
               <span className="purple">
-                the world of Retail and Telecommunications.
+                the world of Retail and Telecommunications.<br />
               </span>
-              I am a Senior Data Engineer with over 6 years of experience.
+              I am a <span className="purple">Senior Data Engineer</span> with over 6 years of experience.
               <br />
               <br />
               🤵 <b>I specialize in addressing various challenges:</b>

@@ -5,8 +5,7 @@ import Container from "react-bootstrap/Container";
 import logo from "../Assets/logo.png";
 import Button from "react-bootstrap/Button";
 import { Link } from "react-router-dom";
-import { CgGitFork } from "react-icons/cg";
-import { ImBlog } from "react-icons/im";
+import { MdOutlineMail } from "react-icons/md";
 import {
   AiFillStar,
   AiOutlineHome,
@@ -19,6 +18,9 @@ import { CgFileDocument } from "react-icons/cg";
 function NavBar() {
   const [expand, updateExpanded] = useState(false);
   const [navColour, updateNavbar] = useState(false);
+  const handleEmailClick = () => {
+    window.location.href = "mailto:marouanegazouzi@gmail.com";
+  };
 
   function scrollHandler() {
     if (window.scrollY >= 20) {
@@ -72,13 +74,13 @@ function NavBar() {
             <Nav.Item>
               <Nav.Link
                 as={Link}
-                to="/project"
+                to="/client"
                 onClick={() => updateExpanded(false)}
               >
                 <AiOutlineFundProjectionScreen
                   style={{ marginBottom: "2px" }}
                 />{" "}
-                Projects
+                Clients
               </Nav.Link>
             </Nav.Item>
 
@@ -92,24 +94,14 @@ function NavBar() {
               </Nav.Link>
             </Nav.Item>
 
-            <Nav.Item>
-              <Nav.Link
-                href="https://soumyajitblogs.vercel.app/"
-                target="_blank"
-                rel="noreferrer"
-              >
-                <ImBlog style={{ marginBottom: "2px" }} /> Blogs
-              </Nav.Link>
-            </Nav.Item>
 
             <Nav.Item className="fork-btn">
               <Button
-                href="https://github.com/soumyajit4419/Portfolio"
+                onClick={handleEmailClick}
                 target="_blank"
                 className="fork-btn-inner"
               >
-                <CgGitFork style={{ fontSize: "1.2em" }} />{" "}
-                <AiFillStar style={{ fontSize: "1.1em" }} />
+                Contact me <MdOutlineMail />
               </Button>
             </Nav.Item>
           </Nav>
